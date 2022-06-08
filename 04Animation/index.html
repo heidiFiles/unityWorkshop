@@ -25,18 +25,13 @@
         animation="property: rotation; 
                    to: 90 360 180; 
                    dur: 6000; 
-                   easing: easeOutQuad; 
-                   loop: 3">
+                   loop: 3
+                   elasticity: 200
+                   easing: easeOutQuad; ">
         </a-box>
      
 
-      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: #myBox"></a-entity>
-      
-      <a-entity id="#myBox" geometry="primitive: #myBox" material="#wood" position="0 1.8 -3" rotation="0 30 0"
-                animation__mouseenter="property: components.material.material.color; type: material; from: #wood; to: #grass; startEvents: mouseenter; dur: 500"
-                animation__mouseleave="property: components.material.material.color; type: material; from: #grass; to: #wood; startEvents: mouseleave; dur: 500"></a-entity>
-      
-   
+    
       
   <a-box id="myOtherBox" 
         position="2 1 -3" 
